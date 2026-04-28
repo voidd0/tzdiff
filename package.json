@@ -1,0 +1,47 @@
+{
+  "name": "@v0idd0/tzdiff",
+  "version": "1.0.0",
+  "description": "tzdiff \u2014 diff two timezones, see meeting overlap windows, find optimal sync slots. DST-aware, IANA-database backed, terminal table output. Free forever from v\u00f8iddo.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "tzdiff": "./bin/tzdiff.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "timezone",
+    "tz",
+    "time",
+    "schedule",
+    "meeting",
+    "dst",
+    "cli",
+    "developer-tools",
+    "voiddo"
+  ],
+  "author": "v\u00f8iddo <support@voiddo.com> (https://voiddo.com)",
+  "license": "MIT",
+  "homepage": "https://tools.voiddo.com/tzdiff/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidd0/tzdiff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/voidd0/tzdiff/issues",
+    "email": "support@voiddo.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
