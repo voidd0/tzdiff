@@ -1,7 +1,7 @@
 {
   "name": "@v0idd0/tzdiff",
-  "version": "1.0.1",
-  "description": "tzdiff — diff two timezones, see meeting overlap windows, find optimal sync slots. DST-aware, IANA-database backed, terminal table output. Free forever from vøiddo.",
+  "version": "1.0.2",
+  "description": "Compare the current time in several time zones side by side, or show a given moment in each zone. IANA names and common abbreviations, DST aware.",
   "main": "src/index.js",
   "type": "module",
   "bin": {
@@ -14,12 +14,12 @@
     "timezone",
     "tz",
     "time",
-    "schedule",
-    "meeting",
+    "time-zones",
     "dst",
+    "iana",
+    "convert-time",
     "cli",
-    "developer-tools",
-    "voiddo"
+    "developer-tools"
   ],
   "author": "vøiddo <support@voiddo.com> (https://voiddo.com)",
   "license": "MIT",

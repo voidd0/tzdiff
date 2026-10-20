@@ -68,9 +68,9 @@ Tools like timeanddate.com handle the broader case (recurring meetings, DST hist
 
 **Does `--at` accept your home timezone?** Pass it explicitly: `--at "2026-07-31 17:00 PDT"`. The parser accepts `<datetime> <tz>` in that order.
 
-**Will it ever DST-jump output rows?** Each row is computed independently against its zone's TZ database, so yes — running on the spring-forward Sunday will show the forward jump in the affected zone only.
+**Will it ever DST-jump output rows?** Each row is computed independently against its zone's TZ database, so yes, running on the spring-forward Sunday will show the forward jump in the affected zone only.
 
-**Can I save a recurring meeting?** No. tzdiff is one-shot by design. For recurring time-math, use a calendar app — that's a different problem.
+**Can I save a recurring meeting?** No. tzdiff is one-shot by design. For recurring time-math, use a calendar app, that's a different problem.
 
 ## Programmatic API
 
@@ -87,21 +87,9 @@ const rows = compare(['PST', 'IDT'], at);
 
 ## Tips for meeting math
 
-- **Pin one zone as your anchor.** When scheduling, write the time once in UTC and let recipients run `tzdiff --at "2026-05-12 14:00 UTC" <their zone>` — eliminates the "is that 2pm yours or mine" thread.
+- **Pin one zone as your anchor.** When scheduling, write the time once in UTC and let recipients run `tzdiff --at "2026-05-12 14:00 UTC" <their zone>`, eliminates the "is that 2pm yours or mine" thread.
 - **DST-sensitive ranges.** If a meeting falls within a few weeks of a DST boundary, run tzdiff for both pre- and post-boundary dates; the zones won't always agree on which week the change lands.
-- **Slack format.** The aligned columnar output pastes cleanly into Slack code blocks (`\`\`\``) — no Markdown table conversion needed.
-
-## More from the studio
-
-This is one tool out of many — see [`from-the-studio.md`](from-the-studio.md) for the full lineup of vøiddo products (other CLI tools, browser extensions, the studio's flagship products and games).
-
-## From the same studio
-
-- **[@v0idd0/jsonyo](https://www.npmjs.com/package/@v0idd0/jsonyo)** — JSON swiss army knife, 18 commands, zero limits
-- **[@v0idd0/envguard](https://www.npmjs.com/package/@v0idd0/envguard)** — stop shipping `.env` drift to staging
-- **[@v0idd0/depcheck](https://www.npmjs.com/package/@v0idd0/depcheck)** — find unused dependencies in one command
-- **[@v0idd0/gitstats](https://www.npmjs.com/package/@v0idd0/gitstats)** — git repo analytics, one command
-- **[View all tools →](https://voiddo.com/tools/)**
+- **Slack format.** The aligned columnar output pastes cleanly into Slack code blocks (`\`\`\``), no Markdown table conversion needed.
 
 ## License
 
@@ -109,4 +97,4 @@ MIT.
 
 ---
 
-Built by [vøiddo](https://voiddo.com/) — a small studio shipping AI-flavoured products, free dev tools, Chrome extensions and weird browser games.
+Maintained by v0idd0.
