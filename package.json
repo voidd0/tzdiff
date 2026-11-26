@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "tzdiff": "./bin/tzdiff.js"
+    "tzdiff": "bin/tzdiff.js"
   },
   "scripts": {
     "test": "node test.js"
