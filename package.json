@@ -1,7 +1,7 @@
 {
   "name": "@v0idd0/tzdiff",
-  "version": "1.0.2",
-  "description": "Compare the current time in several time zones side by side, or show a given moment in each zone. IANA names and common abbreviations, DST aware.",
+  "version": "1.0.3",
+  "description": "Shows the current time, or a given moment, in several time zones side by side. Accepts IANA names and common abbreviations, and follows daylight saving time.",
   "main": "src/index.js",
   "type": "module",
   "bin": {
@@ -12,45 +12,39 @@
   },
   "keywords": [
     "timezone",
+    "time-zones",
     "tz",
     "time",
-    "time-zones",
     "dst",
     "iana",
     "convert-time",
-    "cli",
-    "developer-tools"
+    "cli"
   ],
   "author": "vøiddo <support@voiddo.com> (https://voiddo.com)",
   "license": "MIT",
-  "homepage": "https://tools.voiddo.com/tzdiff/",
+  "homepage": "https://voiddo.com/packages/#tzdiff",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/voidd0/tzdiff.git"
   },
   "bugs": {
-    "url": "https://github.com/voidd0/tzdiff/issues",
-    "email": "support@voiddo.com"
+    "url": "https://github.com/voidd0/tzdiff/issues"
   },
   "publishConfig": {
     "access": "public"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "files": [
-    "bin/",
-    "src/",
-    "LICENSE",
-    "README.md"
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
   ],
   "os": [
     "darwin",
     "linux",
     "win32"
-  ],
-  "funding": {
-    "type": "individual",
-    "url": "https://voiddo.com/contact/"
-  }
+  ]
 }

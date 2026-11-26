@@ -6,21 +6,23 @@ import { compare, format } from '../src/index.js';
 const args = process.argv.slice(2);
 
 function help() {
-  console.log(`
-tzdiff — compare timezones side by side. for humans, not crontabs.
+  console.log(`tzdiff: compare time zones side by side
 
-  tzdiff <zone1> <zone2> ...     show current time in each zone
-  tzdiff --at "2026-04-28 14:30 IDT" <zones>  show that moment in each zone
-  tzdiff --json <zones>          json output
-  tzdiff -h, --help              show this
+Usage:
+  tzdiff <zone> <zone> ...             show the current time in each zone
+  tzdiff --at "<date time>" <zones>    show that moment in each zone
+  tzdiff --json <zones>                print JSON
+  tzdiff -V, --version                 print the version
+  tzdiff -h, --help                    show this help
 
-zones can be IANA names (America/Los_Angeles) or aliases (PST, IDT, JST, ...).
+A zone is an IANA name (America/Los_Angeles) or an abbreviation (PST, IDT, JST).
 
-examples:
+Examples:
   tzdiff IDT PST UTC TYO
   tzdiff Asia/Tokyo Europe/London America/New_York
   tzdiff --at "2026-04-28 09:00 UTC" PST EST IST
-`);
+
+Docs and issues: https://github.com/voidd0/tzdiff`);
 }
 
 if (args.length === 0 || args.includes('-h') || args.includes('--help')) {

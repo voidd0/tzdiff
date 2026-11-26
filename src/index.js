@@ -1,9 +1,3 @@
-// tzdiff — compare timezones side by side.
-//
-// Uses Intl.DateTimeFormat for the actual conversion (zero deps), with a
-// short alias map for common abbreviations -> IANA names. Anything that
-// resolves via Intl works directly (e.g. America/Los_Angeles, Europe/London).
-
 const ALIASES = {
   // North America
   PST: 'America/Los_Angeles', PDT: 'America/Los_Angeles',
